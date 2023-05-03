@@ -1,0 +1,44 @@
+@keyframes BounceDown {
+  0% {
+    opacity: 0%;
+    transform: translateY(-1000px) scaleX(1) scaleY(1);
+  }
+
+  65% {
+    opacity: 1;
+    transform: translateY(0) scaleX(1) scaleY(1);
+  }
+
+  70% {
+    transform: translateY(20%) scaleX(1.4) scaleY(.6);
+  }
+
+  80% {
+    transform: translateY(-10%) scaleX(.8) scaleY(1.2);
+  }
+
+  90% {
+    transform: translateY(5%) scaleX(1.1) scaleY(.9);
+  }
+
+  100% {
+    transform: translateY(0) scaleX(1) scaleY(1);
+  }
+}
+
+body {
+  background: #34ae48;
+}
+
+#ball {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -30px;
+  margin-left: -30px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  animation: BounceDown 1s linear infinite alternate;
+}
